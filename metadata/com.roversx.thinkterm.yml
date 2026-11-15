@@ -1,0 +1,24 @@
+Categories:
+  - System
+License: GPL-3.0-only
+WebSite: https://closex.org/thinkterm
+SourceCode: https://github.com/RoversX/ThinkTerm
+IssueTracker: https://github.com/RoversX/ThinkTerm/issues
+Changelog: https://github.com/RoversX/ThinkTerm/releases
+
+Name: ThinkTerm
+Summary: Pick up your ThinkTerm terminals from your phone
+Description: |-
+    ThinkTerm for Android opens the terminals you run in ThinkTerm on your
+    computers and servers. The programs keep running there; the phone picks
+    up the same threads and panes you left on the desktop.
+
+    * Every thread on every host on one home screen, each with a live preview
+    * Switch panes, see how they are split, zoom one to the whole screen
+    * A key bar with Esc, Tab, Ctrl, arrows and more, over any keyboard
+    * Send photos, files and clipboard images into a session
+    * Connect over SSH, or through Tailscale built into the app
+    * Follows the system's light or dark mode, in your terminal's colors
+
+    Keep the app and ThinkTerm on your hosts on the same release: each
+    release of the app talks to the ThinkTerm of the same version.

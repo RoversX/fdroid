@@ -1,0 +1,21 @@
+# Settings for `fdroid update`, as update.sh runs it. Nothing secret is
+# kept here: the signing key and its password come from the environment.
+# update.sh adds repo_url, the address the repository is served from, which
+# names the account it is published under (fdroid reads that one only as
+# written, not through {env: ...}).
+
+repo_name: CloseX
+repo_description: >-
+  Apps from CloseX: ThinkTerm for Android, updated with every ThinkTerm
+  release.
+repo_icon: icon.png
+
+# The key that signs the index. Generated once and kept as the repository's
+# Actions secrets; phones trust it by the fingerprint in the link they added.
+keystore: {env: FDROID_KEYSTORE_FILE}
+keystorepass: {env: FDROID_KEYSTORE_PASSWORD}
+keypass: {env: FDROID_KEYSTORE_PASSWORD}
+repo_keyalias: repo
+
+# update.sh downloads only the releases to offer, so nothing is archived.
+archive_older: 0

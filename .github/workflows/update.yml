@@ -1,0 +1,114 @@
+# Rebuilds the repository from the newest releases of each app in metadata/
+# and publishes it as the dist branch, which phones read through
+# raw.githubusercontent.com. ThinkTerm's release workflow runs this once a
+# release is published; it can also be run by hand from the Actions tab.
+#
+# Needs two secrets: FDROID_KEYSTORE, the PKCS12 keystore holding the key
+# "repo" that signs the index, base64-encoded, and FDROID_KEYSTORE_PASSWORD.
+name: Update repository
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: The release that asked for this run; the run fails unless it is published (blank when run by hand)
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+# Each run builds from every release there is, so one queued behind another
+# loses nothing by waiting for it.
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      # No token left in the checkout's git config while third-party code
+      # runs below; the publish step brings its own. The repository is
+      # public, so reading dist needs none.
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Install Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Install fdroidserver
+        run: pip install fdroidserver==2.4.5
+
+      # Keeps the date each version was first offered. The first run has no
+      # dist branch to read.
+      - name: Restore the previous run's cache
+        run: |
+          if git fetch --depth=1 origin dist; then
+            git show origin/dist:cache/apkcache.json > "$RUNNER_TEMP/apkcache.json" || true
+          fi
+
+      # The tag reaches the script through env rather than a ${{ }} splice: it
+      # is free text from whoever dispatched the run.
+      - name: Build the repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FDROID_KEYSTORE: ${{ secrets.FDROID_KEYSTORE }}
+          FDROID_KEYSTORE_PASSWORD: ${{ secrets.FDROID_KEYSTORE_PASSWORD }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          if [ -z "$FDROID_KEYSTORE" ] || [ -z "$FDROID_KEYSTORE_PASSWORD" ]; then
+            echo "::error::the FDROID_KEYSTORE and FDROID_KEYSTORE_PASSWORD secrets are not both set"
+            exit 1
+          fi
+          [ -z "$TAG" ] || echo "Requested by release $TAG"
+          umask 077
+          printf '%s' "$FDROID_KEYSTORE" | base64 -d > "$RUNNER_TEMP/repo.p12"
+          export FDROID_KEYSTORE_FILE="$RUNNER_TEMP/repo.p12"
+          export FDROID_REPO_URL="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/dist/fdroid/repo"
+          export CACHE="$RUNNER_TEMP/apkcache.json"
+          export EXPECT_TAG="$TAG"
+          # A release just published can take a moment to be listed, and the
+          # API can fail once; a few tries before giving up.
+          for attempt in 1 2 3; do
+            if ./update.sh; then
+              break
+            fi
+            if [ "$attempt" = 3 ]; then
+              rm -f "$FDROID_KEYSTORE_FILE"
+              exit 1
+            fi
+            sleep 30
+          done
+          rm -f "$FDROID_KEYSTORE_FILE"
+          {
+            echo "### Repository"
+            echo
+            echo '```'
+            cat site/link.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # The branch is replaced rather than added to, so an APK leaves the
+      # history when it leaves the index and the repository stays small.
+      - name: Publish
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          cd site
+          git init -q -b dist
+          git add -A
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -q -m "Update repository${TAG:+ for $TAG}"
+          auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
+          git -c http.extraheader="AUTHORIZATION: basic $auth" \
+            push --force "https://github.com/$GITHUB_REPOSITORY.git" dist

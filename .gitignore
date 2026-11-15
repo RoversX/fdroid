@@ -1,0 +1,8 @@
+# update.sh's output and fdroid's working directory.
+/build/
+/site/
+
+# Signing keys never belong here; they live in the Actions secrets.
+*.p12
+*.jks
+*.keystore

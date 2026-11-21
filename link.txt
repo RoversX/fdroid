@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/RoversX/fdroid/dist/fdroid/repo?fingerprint=F1AAB251303D3B6F35B07AD3DD95032A707CC11536BE2E204B07DF37DA1E6FDD

@@ -1,0 +1,624 @@
+{
+  "METADATA_VERSION": 20002,
+  "allow_disabled_algorithms": false,
+  "ThinkTerm-android-arm64-0.5.1.apk": {
+    "hash": "7765e1e16c28159d71d4e853bdc5d58f0e673474492d6eb5fdf3218614939b23",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50100,
+    "name": "ThinkTerm",
+    "versionName": "0.5.1",
+    "minSdkVersion": 35,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 39705011,
+    "apkName": "ThinkTerm-android-arm64-0.5.1.apk",
+    "added": 1794816100.591969
+  },
+  "ThinkTerm-android-arm64-0.5.2.apk": {
+    "hash": "753eef8498f7ee585f75eecf132695ec7a875c4ad10d90639013203ac039496d",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50200,
+    "name": "ThinkTerm",
+    "versionName": "0.5.2",
+    "minSdkVersion": 35,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 39733683,
+    "apkName": "ThinkTerm-android-arm64-0.5.2.apk",
+    "added": 1795231165.047274
+  },
+  "ThinkTerm-android-arm64-0.5.3.apk": {
+    "hash": "0cdaf7d62476f0e62a5ca77bde90ceb29f04fa2a04d88aace8215cd8bed2a54a",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50300,
+    "name": "ThinkTerm",
+    "versionName": "0.5.3",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 39836139,
+    "apkName": "ThinkTerm-android-arm64-0.5.3.apk",
+    "added": 1795263492.183145
+  },
+  "ThinkTerm-android-arm64-0.5.4.apk": {
+    "hash": "e7c7bd72158b8de366ed8a33a25e91480257821fc89b72c01106130edb0dfa3a",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50400,
+    "name": "ThinkTerm",
+    "versionName": "0.5.4",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 39848427,
+    "apkName": "ThinkTerm-android-arm64-0.5.4.apk",
+    "added": 1795275261.711078
+  },
+  "ThinkTerm-android-arm64-0.5.5.apk": {
+    "hash": "dbf1c47748fd73692e3588513a98ef25f498a41c0f1697a5ac59eaaf938091b7",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50500,
+    "name": "ThinkTerm",
+    "versionName": "0.5.5",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 39950906,
+    "apkName": "ThinkTerm-android-arm64-0.5.5.apk",
+    "added": 1795324573.663622
+  },
+  "ThinkTerm-android-arm64-0.5.6.apk": {
+    "hash": "9ca10b3fde5adaa81cf17c471c95760ccc56a6de3fff67f323fb3fb05083f897",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50600,
+    "name": "ThinkTerm",
+    "versionName": "0.5.6",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 40524346,
+    "apkName": "ThinkTerm-android-arm64-0.5.6.apk",
+    "added": 1795356355.962505
+  },
+  "ThinkTerm-android-arm64-0.5.7.apk": {
+    "hash": "6d367017a0309d9cab486937400596d6e076f9ec991bfe078af85ba9294c4b31",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50700,
+    "name": "ThinkTerm",
+    "versionName": "0.5.7",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 41548923,
+    "apkName": "ThinkTerm-android-arm64-0.5.7.apk",
+    "added": 1795415693.939219
+  },
+  "ThinkTerm-android-arm64-0.5.8.apk": {
+    "hash": "0f962448d96bdade83781b50942adda427413ff19231d25359622fcd67508187",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50800,
+    "name": "ThinkTerm",
+    "versionName": "0.5.8",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 41782617,
+    "apkName": "ThinkTerm-android-arm64-0.5.8.apk",
+    "added": 1795436983.60158
+  },
+  "ThinkTerm-android-arm64-0.5.9.apk": {
+    "hash": "8fb379ebb9ad525154b26e95743cbb174b25b94d546a5e05ac0ab07356435e3c",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 50900,
+    "name": "ThinkTerm",
+    "versionName": "0.5.9",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 42044828,
+    "apkName": "ThinkTerm-android-arm64-0.5.9.apk",
+    "added": 1795502086.798257
+  },
+  "ThinkTerm-android-arm64-0.6.0.apk": {
+    "hash": "47479121702a52769d3e1a217070bda4a659cbf97e2cd03d387641a56a439873",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 60000,
+    "name": "ThinkTerm",
+    "versionName": "0.6.0",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 42073775,
+    "apkName": "ThinkTerm-android-arm64-0.6.0.apk",
+    "added": 1795601261.397924
+  },
+  "ThinkTerm-android-arm64-0.6.1.apk": {
+    "hash": "16ad35639aace1527df77d1de2fb658db1770355400938a02b3d80ff3b5f5e6b",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.USE_BIOMETRIC",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 60100,
+    "name": "ThinkTerm",
+    "versionName": "0.6.1",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 42401547,
+    "apkName": "ThinkTerm-android-arm64-0.6.1.apk",
+    "added": 1795682701.030057
+  },
+  "ThinkTerm-android-arm64-0.6.2.apk": {
+    "hash": "ba8057d348f150b45b5b8fdb0153777468656b84e362cd81f0c156696e4b8516",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.USE_BIOMETRIC",
+        null
+      ],
+      [
+        "com.roversx.thinkterm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.roversx.thinkterm",
+    "versionCode": 60200,
+    "name": "ThinkTerm",
+    "versionName": "0.6.2",
+    "minSdkVersion": 33,
+    "targetSdkVersion": 36,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "a55da3afbb904a5ef94cefe59d89cdd6",
+    "signer": "4b4f9a600475356e4f8ab9c45645492ad4a482d2866059f8b9719e28833cb7f3",
+    "size": 42463130,
+    "apkName": "ThinkTerm-android-arm64-0.6.2.apk",
+    "added": 1795744203.253906
+  }
+}
